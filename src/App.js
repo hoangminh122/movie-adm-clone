@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import GlobalStyle from 'styles/global';
-import { Home, Around, Detail, Likes, Search, About } from 'pages/index';
+import { Home, Around, Detail, Likes, Search, About, PlayFilm } from 'pages/index';
+import 'antd/dist/antd.css';
 
 const App = () => {
   const { isOpen } = useSelector(state => state.overlay);
@@ -12,8 +13,8 @@ const App = () => {
       <GlobalStyle isOpen={isOpen} />
       <Router basename={window.location.pathname || ''}>
         <Switch>
-          <Route exact path="/">
-            <Home />
+          <Route  path="/">
+            <PlayFilm />
           </Route>
           <Route path="/around">
             <Around />
@@ -27,6 +28,9 @@ const App = () => {
           />
           <Route path="/likes">
             <Likes />
+          </Route>
+          <Route path="/play">
+            <PlayFilm />
           </Route>
           <Route path="/search">
             <Search />

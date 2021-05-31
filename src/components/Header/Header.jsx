@@ -43,13 +43,13 @@ const Header = ({ color, bgColor, isSearching }) => {
               {isTabletPortrait ? (
                 <S.UL>
                   <S.LI>
-                    <Link to="/around">둘러보기</Link>
+                    <Link to="/around">Danh sách</Link>
                   </S.LI>
                   <S.LI>
-                    <Link to="/likes">좋아요</Link>
+                    <Link to="/likes">Bình chọn</Link>
                   </S.LI>
                   <S.LI>
-                    <Link to="/about">소개</Link>
+                    <Link to="/about">Liên hệ</Link>
                   </S.LI>
                 </S.UL>
               ) : (

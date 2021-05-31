@@ -28,7 +28,7 @@ const DetailVideos = () => {
     <Section>
       <Wrapper>
         <Container>
-          <Title>예고편</Title>
+          <Title>Trailer</Title>
           {result.videos.length ? (
             <Swiper {...params}>
               {result.videos.map(video => (

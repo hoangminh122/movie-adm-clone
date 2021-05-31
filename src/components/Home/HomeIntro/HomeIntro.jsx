@@ -13,12 +13,12 @@ const HomeIntro = () => {
       <S.HomeIntro>
         <Wrapper>
           <S.Container>
-            <S.Title>오늘의 영화</S.Title>
+            <S.Title>Phim hay trong ngày dành cho bạn</S.Title>
             <S.Desc data-testid="home-tagline">{result.tagline}</S.Desc>
             <S.Name data-testid="home-title">{result.title}</S.Name>
             <S.MoreButton>
               <Link data-testid="more-link" to={`/detail/${result.id}`}>
-                더보기
+                Chi tiết
               </Link>
             </S.MoreButton>
           </S.Container>

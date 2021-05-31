@@ -10,18 +10,17 @@ const AboutContent = () => {
         <S.Container>
           <S.Logo src={logo} alt="" />
           <S.Intro>
-            TMDB API를 활용한 영화 사이트로, 영화를 검색할 수 있고 영화의
-            상세정보를 확인할 수 있습니다. 또한 다양한 방식으로 영화를 둘러볼 수
-            있으며 좋아요를 누를 수도 있습니다.
+          Hãy Liên hệ với chúng tôi!
+          Nếu bạn có bất kỳ câu hỏi nào,
+          xin đừng ngần ngại gửi cho chúng tôi một tin nhắn. Chúng tôi trả lời trong vòng !
           </S.Intro>
           <S.Intro>
-            React.js, Redux, React router, Styled components, Jest, React
-            testing library 등을 활용하여 구현하였고 모바일 퍼스트 디자인을
-            채택하여 모바일 화면부터 구성하였습니다.
+            <p>Email : hoangminh12297@gmail.com</p>
+            <p>Phone : 02345534553 </p>
           </S.Intro>
           <S.ViewCode href="https://github.com/baeharam/Movie" target="_blank">
             <S.Github />
-            소스코드 보기
+            https://github.com/hoangminh122
           </S.ViewCode>
         </S.Container>
       </Wrapper>

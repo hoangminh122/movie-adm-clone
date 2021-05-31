@@ -27,8 +27,8 @@ export const aroundQueries = {
 };
 
 export const aroundList = [
-  { text: '현재상영중', state: 'prev', type: AROUND_NOW_PLAYING },
-  { text: '인기', state: 'cur', type: AROUND_POPULAR },
-  { text: '좋은평가', state: 'next', type: AROUND_TOP_RATED },
-  { text: '상영예정', state: 'none', type: AROUND_UPCOMING },
+  { text: 'Đang phát', state: 'prev', type: AROUND_NOW_PLAYING },
+  { text: 'Phổ biến', state: 'cur', type: AROUND_POPULAR },
+  { text: 'Lượt xem cao', state: 'next', type: AROUND_TOP_RATED },
+  { text: 'Sắp chiếu', state: 'none', type: AROUND_UPCOMING },
 ];

@@ -17,17 +17,17 @@ const Overlay = () => {
       <S.UL>
         <S.LI>
           <Link to="/around" data-testid="around-link" onClick={onClickLink}>
-            둘러보기
+            Danh sách
           </Link>
         </S.LI>
         <S.LI>
           <Link to="/likes" data-testid="likes-link" onClick={onClickLink}>
-            좋아요
+            Bình chọn
           </Link>
         </S.LI>
         <S.LI>
           <Link to="/about" data-testid="about-link" onClick={onClickLink}>
-            소개
+            Liên hệ
           </Link>
         </S.LI>
       </S.UL>

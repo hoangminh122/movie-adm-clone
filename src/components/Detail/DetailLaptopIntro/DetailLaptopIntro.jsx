@@ -10,6 +10,9 @@ import {
 import { Section } from 'components/Detail/Detail.style';
 import { Wrapper } from 'styles/variables';
 import * as S from './DetailLaptopIntro.style';
+import { Button } from 'antd';
+import { Link, useHistory } from 'react-router-dom';
+
 
 const DetailLaptopIntro = () => {
   const { result } = useSelector(state => state.detail);
@@ -52,7 +55,7 @@ const DetailLaptopIntro = () => {
                 <h1>{result.title}</h1>
                 <S.Year>({result.releaseDate})</S.Year>
                 <S.Like type="button" onClick={onClickLike}>
-                  <span>{isLike ? '좋아요 취소' : '좋아요'}</span>
+                  <span>{isLike ? 'Dislike' : 'Like'}</span>
                   {isLike ? <DislikeIcon /> : <LikeIcon />}
                 </S.Like>
               </S.Title>
@@ -70,7 +73,20 @@ const DetailLaptopIntro = () => {
               <S.Divider />
               <S.Tagline>{result.tagline}</S.Tagline>
               <S.Overview>{result.overview}</S.Overview>
+           
+              {/* test */}
+              <div style={{flex: 1,margin:10}}>
+              <Button type="primary" style={{margin:10}} size="large">Trailer</Button>
+              <Link to="/play">
+                <Button type="primary" danger style={{margin:10}} size="large">
+                  Xem phim
+                </Button>
+              </Link>
+            </div>
+           
             </S.Intro>
+           
+          
           </S.Container>
         </Wrapper>
       </Section>

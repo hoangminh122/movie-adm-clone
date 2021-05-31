@@ -29,7 +29,7 @@ const DetailCasts = () => {
     <Section>
       <Wrapper>
         <Container>
-          <Title>출연</Title>
+          <Title>Diễn viên</Title>
           <Swiper {...params}>
             {result.casts.map(cast => (
               <S.CastContent key={cast.name + cast.role}>

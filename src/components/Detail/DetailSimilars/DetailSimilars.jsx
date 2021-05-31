@@ -33,7 +33,7 @@ const DetailSimilars = () => {
         <Wrapper>
           <Container>
             {result.similars && result.similars.length ? (
-              <Title>이런 영화는 어때요?</Title>
+              <Title>Phim được đề xuất</Title>
             ) : null}
             <Swiper {...params}>
               {result.similars &&

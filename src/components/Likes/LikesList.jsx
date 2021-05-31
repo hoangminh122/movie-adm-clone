@@ -25,7 +25,7 @@ const LikesList = () => {
     <section>
       <Wrapper>
         <S.Container>
-          <S.Title>좋아하는 영화들</S.Title>
+          <S.Title>Phim được yêu thích nhất</S.Title>
           <S.ItemList>
             {likes.length ? (
               likes.map(like => (
@@ -39,7 +39,7 @@ const LikesList = () => {
                     onClick={onClickRemove}
                     type="button"
                   >
-                    좋아요 취소
+                    Chi tiết
                   </S.RemoveButton>
                 </S.Item>
               ))

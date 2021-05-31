@@ -4,3 +4,4 @@ export { default as Detail } from './Detail/Detail';
 export { default as Likes } from './Likes/Likes';
 export { default as Search } from './Search/Search';
 export { default as About } from './About/About';
+export { default as PlayFilm } from './PlayFilm/PlayFilm';

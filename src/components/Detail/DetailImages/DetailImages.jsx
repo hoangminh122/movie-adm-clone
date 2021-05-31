@@ -32,7 +32,7 @@ const DetailImages = () => {
     <Section>
       <Wrapper>
         <Container>
-          <Title>갤러리</Title>
+          <Title>Bộ sưu tập</Title>
           {result.images.length ? (
             <Swiper {...params}>
               {result.images.map(image => (
